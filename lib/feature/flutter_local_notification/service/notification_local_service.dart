@@ -7,6 +7,7 @@ class NotificationLocalService {
   Future<void> initNotification() async {
     AndroidInitializationSettings initializationSettingsAndroid =
         const AndroidInitializationSettings('reading');
+    // image reading in path: android\app\src\main\res\drawable\reading.png
 
     var initializationSettingsIOS = DarwinInitializationSettings(
         requestAlertPermission: true,
