@@ -8,7 +8,7 @@ I divided the application into 2 functions:
 ## Image of the application
 
 ### Use flutter_local_notifications
-<img src="image\notification_local_basic.jpg">
+<img src="image\notification_local_basic.jpg" width="400">
 
 ### Use awesome_notifications
 | 1 | 2|
@@ -24,18 +24,24 @@ I divided the application into 2 functions:
 
 ### Setup build.gradle
 path: "android\app\build.gradle"
+
 android {
+
     compileSdkVersion 34
-    ..
+    
     defaultConfig {
+    
         minSdkVersion 21
+        
     }
+    
 }
 
 ### Setup AndroidManifest.xml
 path: "android\app\src\main\AndroidManifest.xml"
 
 add permission
+
 ```sh
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
